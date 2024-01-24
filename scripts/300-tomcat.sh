@@ -6,9 +6,9 @@ amazon-linux-extras install java-openjdk11
 echo "Installing Tomcat 9"
 
 #Config
-tomcat9_url="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.63/bin/apache-tomcat-9.0.63.tar.gz"
-tomcat9_tar_gz="apache-tomcat-9.0.63.tar.gz"
-tomcat9_dir="apache-tomcat-9.0.63"
+tomcat9_url="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.85/bin/apache-tomcat-9.0.85.tar.gz"
+tomcat9_tar_gz="apache-tomcat-9.0.85.tar.gz"
+tomcat9_dir="apache-tomcat-9.0.85"
 
 wget $tomcat9_url -P /tmp
 tar -xvf /tmp/$tomcat9_tar_gz
