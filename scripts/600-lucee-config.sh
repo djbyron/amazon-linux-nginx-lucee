@@ -1,17 +1,10 @@
 #!/bin/bash
 
-echo "installing CommandBox"
-
 #make request to server to generate context
 curl --verbose http://127.0.0.1:8080/lucee/admin/web.cfm
 
-#adionar repositorio commandbox
-cp etc/commandbox/commandbox.repo /etc/yum.repos.d/commandbox.repo
-
 # atualizar 
 sudo yum update -y
-sudo yum install commandbox -y
-box install commandbox-cfconfig
 
 if [[ "$ADMIN_PASSWORD" == "" ]]; then
 	echo "No ADMIN_PASSWORD set, generating a random password and storing it here: /root/lucee-admin-password.txt"
