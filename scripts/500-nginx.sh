@@ -36,7 +36,8 @@ mkdir $web_root/example.com/wwwroot
 echo "Creating a default index.cfm"
 
 #ja tem o arquivo tb
-echo "<!doctype html><html><body><h1>Hello</h1><p><cfoutput>#now()</cfoutput></p></body></html>" > $web_root/default/wwwroot/index.cfm
+echo "<!doctype html><html><head><title>Test HTML Page</title></head><body><h1>Hello</h1></body></html>" > $web_root/default/wwwroot/index.html
+echo "<!doctype html><html><head><title>Test CFML Page</title></head><body><h1>Hello</h1><p><cfoutput>#now()</cfoutput></p></body></html>" > $web_root/default/wwwroot/index.cfm
 
 #add user tomcat to www-data group so it can read files
 #usermod -aG www-data tomcat
