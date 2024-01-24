@@ -19,7 +19,7 @@ Take a look in the `scripts/` subfolder to see the script for each step.
 How do I run it?
 ----------------
 
-1. **Download this repository** - `wget https://github.com/victorbvieira/amazon-linux-nginx-lucee/archive/refs/heads/main.zip`
+1. **Download this repository** - `wget https://github.com/djbyron/amazon-linux-nginx-lucee/archive/refs/heads/main.zip`
 2. **Extract repository** - `unzip main.zip`
 3. **Configuration** - You can either Edit the `install.sh` and change any configuration options such as the Lucee Version or JVM version - or you can use environment variables (see below).
 4. **Run install.sh** - make sure you are root or sudo and run `./install.sh` you may need to `chmod u+x install.sh` to give execute permissions to the script.
