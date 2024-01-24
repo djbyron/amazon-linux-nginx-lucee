@@ -2,7 +2,7 @@
 
 # configurações
 if [[ "$lucee_version" == "" ]]; then
-	export lucee_version="5.3.9.141"
+	export lucee_version="6.0.0.585"
 fi
 
 if [[ "$jvm_max_heap_size" == "" ]];then
